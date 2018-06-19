@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actualizarAlumnoAct">
+
+    <TextView
+        android:id="@+id/txtV_ActualizarAlumno"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Alumno"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/etxt_registroActualizarAlumno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV_ActualizarAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Registro"/>
+    <EditText
+        android:id="@+id/etxt_contraseñaAcrualizarAlumno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxt_registroActualizarAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Contraseña"/>
+    <Spinner
+        android:id="@+id/spin_CarreraActuaAlumno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_contraseñaAcrualizarAlumno"
+        android:layout_marginTop="15dp">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spin_SemestreActuaAlumno"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_CarreraActuaAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/spin_CarreraActuaAlumno">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spin_GrupoActuaalumno"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_CarreraActuaAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/spin_CarreraActuaAlumno">
+    </Spinner>
+    <Button
+        android:id="@+id/btn_ActulizarAlumnoAct"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_GrupoActuaalumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Actualizar"/>
+</RelativeLayout>
