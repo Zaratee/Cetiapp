@@ -11,27 +11,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".unoAct" />
-        <activity android:name=".loginActDocent" />
-        <activity android:name=".loginActAdmin" />
-        <activity android:name=".Admin1Act" />
-        <activity android:name=".crearDocenteAct" />
-        <activity android:name=".crearAlumnoAct" />
-        <activity android:name=".eliminarDocenteAct" />
+        <activity android:name=".unoAct"
+            android:label="Login Alumno"/>
+        <activity android:name=".loginActDocent"
+            android:label="Login Docente"/>
+        <activity android:name=".loginActAdmin"
+            android:label="Login Admin"/>
+        <activity android:name=".Admin1Act"
+            android:label="Bienvenido Administrador"/>
+        <activity android:name=".crearDocenteAct"
+            android:label="Crear"/>
+        <activity android:name=".crearAlumnoAct"
+            android:label="Crear" />
+        <activity android:name=".eliminarDocenteAct"
+            android:label="Eliminar"/>
         <activity
             android:name=".alumno1stAct"
             android:label="Bienvenido Alumno"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".eliminarAlumnAct" />
-        <activity android:name=".actualizarAlumnoAct" />
-        <activity android:name=".actualizarDocenteAct" />
+        <activity android:name=".eliminarAlumnAct"
+            android:label="Eliminar"/>
+        <activity android:name=".actualizarAlumnoAct"
+            android:label="Actualizar"/>
+        <activity android:name=".actualizarDocenteAct"
+            android:label="Actualizar"/>
         <activity
             android:name=".docente1stAct"
             android:label="Bienvenido Docente"
