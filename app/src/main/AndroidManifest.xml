@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zarate.proyecto">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,11 +27,15 @@
         <activity android:name=".eliminarDocenteAct" />
         <activity
             android:name=".alumno1stAct"
-            android:label="Bienvenido"
+            android:label="Bienvenido Alumno"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".eliminarAlumnAct" />
         <activity android:name=".actualizarAlumnoAct" />
-        <activity android:name=".actualizarDocenteAct"></activity>
+        <activity android:name=".actualizarDocenteAct" />
+        <activity
+            android:name=".docente1stAct"
+            android:label="Bienvenido Docente"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
