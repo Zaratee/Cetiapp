@@ -2,14 +2,20 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoalumno">
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtV_Grupo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grupo"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"
         />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/back_list"/>
 
 </RelativeLayout>

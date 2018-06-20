@@ -1,17 +1,22 @@
 package com.example.zarate.proyecto;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class crearAlumnoAct extends AppCompatActivity {
 
     Spinner spincarrera,spinsemestre,spingrupo;
     ArrayAdapter<CharSequence> adaptcarrera,adaptsemestre,adaptgrupo;
+    TextView modDatos;
+    Typeface quan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +36,12 @@ public class crearAlumnoAct extends AppCompatActivity {
         adaptgrupo = ArrayAdapter.createFromResource(this,R.array.grupo,android.R.layout.simple_spinner_item);
         adaptgrupo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spingrupo.setAdapter(adaptgrupo);
+
+
+        String fuente = "fuentes/quantify.ttf";
+        this.quan = Typeface.createFromAsset(getAssets(),fuente);
+
+        modDatos = (TextView) findViewById(R.id.txtV_CrearAlumno);
+        modDatos.setTypeface(quan);
     }
 }

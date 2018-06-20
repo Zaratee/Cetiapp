@@ -43,6 +43,7 @@
         android:drawableLeft="@drawable/password"
         android:drawablePadding="5dp"
         android:layout_below="@+id/etxt_liUsuarioAdmin"
+        android:inputType="textPassword"
         />
 
     <Button

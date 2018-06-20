@@ -1,14 +1,18 @@
 package com.example.zarate.proyecto;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Admin1Act extends AppCompatActivity {
 
     Button crearAlum, crearDoc, elimAlum, elimDoc, actAlum, actDoc;
+    TextView modDatos;
+    Typeface quan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +72,12 @@ public class Admin1Act extends AppCompatActivity {
                 startActivity(actualizarDocente);
             }
         });
+
+        String fuente = "fuentes/quantify.ttf";
+        this.quan = Typeface.createFromAsset(getAssets(),fuente);
+
+        modDatos = (TextView) findViewById(R.id.txtV_modificarDatos);
+        modDatos.setTypeface(quan);
 
     }
 }
