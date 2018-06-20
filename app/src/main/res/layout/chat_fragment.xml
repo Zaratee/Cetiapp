@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="#DFDFDF">
 
-
     <ImageView
         android:id="@+id/imgV_barrachat"
         android:layout_width="wrap_content"

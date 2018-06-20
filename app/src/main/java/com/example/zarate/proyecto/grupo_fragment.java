@@ -15,7 +15,9 @@ public class grupo_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.grupo_fragment,container,false);
-        String fuente = "fuentes/quantify.ttf";
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"fuentes/quantify.ttf");
+        TextView Grupo = (TextView) v.findViewById(R.id.txtV_Grupo);
+        Grupo.setTypeface(font);
         return v;
     }
 }

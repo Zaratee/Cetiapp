@@ -1,6 +1,7 @@
 package com.example.zarate.proyecto;
 
 import android.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -11,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -41,6 +43,9 @@ public class tareas_fragment extends Fragment {
             }
         });
 
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"fuentes/quantify.ttf");
+        TextView Grupo = (TextView) v.findViewById(R.id.txtV_Tareas);
+        Grupo.setTypeface(font);
         return v;
     }
 }

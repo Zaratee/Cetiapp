@@ -1,6 +1,7 @@
 package com.example.zarate.proyecto;
 
 import android.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -25,6 +26,9 @@ public class Princhat_Fragment extends Fragment {
                     frgman.beginTransaction().replace(R.id.Fragment_conteiner, new chat_fragmentt()).commit();
                 }
             });
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"fuentes/quantify.ttf");
+        TextView Grupo = (TextView) v.findViewById(R.id.letreroChats);
+        Grupo.setTypeface(font);
             return v;
     }
 }
