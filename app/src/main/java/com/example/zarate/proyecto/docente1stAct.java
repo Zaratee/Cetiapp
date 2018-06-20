@@ -89,7 +89,7 @@ public class docente1stAct extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_chat) {
-            frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente,new Princhat_Fragment()).commit();
+            frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente,new PrinchatDocent_fragment()).commit();
         } else if (id == R.id.nav_tarea) {
             frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente,new tareas_fragment()).commit();
         } else if (id == R.id.nav_horario) {

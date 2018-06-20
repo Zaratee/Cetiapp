@@ -9,13 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 public class Princhat_Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.princhat_fragment, container, false);
-        
             TextView chat;
             chat = (TextView) v.findViewById(R.id.txtV_btnIngresarChat);
             chat.setOnClickListener(new View.OnClickListener() {
