@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Admin1Act extends AppCompatActivity {
 
-    Button crearAlum, crearDoc, elimAlum, elimDoc, actAlum, actDoc;
+    Button crearAlum, crearDoc, elimAlum, elimDoc, actAlum, actDoc,salir;
     TextView modDatos;
     Typeface quan;
 
@@ -24,6 +24,7 @@ public class Admin1Act extends AppCompatActivity {
         elimDoc =  (Button) findViewById(R.id.btn_elimDoce);
         actAlum =  (Button) findViewById(R.id.btn_actuaAlumno);
         actDoc = (Button) findViewById(R.id.btn_actuaDoc);
+        salir = (Button) findViewById(R.id.btn_salirAdmin);
 
         crearAlum.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,13 @@ public class Admin1Act extends AppCompatActivity {
             public void onClick(View v) {
                 Intent actualizarDocente = new Intent(Admin1Act.this, actualizarDocenteAct.class);
                 startActivity(actualizarDocente);
+            }
+        });
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent salir = new Intent(Admin1Act.this, MainActivity.class);
+                startActivity(salir);
             }
         });
 

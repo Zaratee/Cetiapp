@@ -34,8 +34,8 @@
         />
 
     <Button
-        android:background="@drawable/edit_round"
         android:id="@+id/btn_elimAlumno"
+        android:background="@drawable/edit_round"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Eliminar "
@@ -45,8 +45,8 @@
         android:layout_marginTop="10dp"
         />
     <Button
-        android:background="@drawable/edit_round"
         android:id="@+id/btn_actuaAlumno"
+        android:background="@drawable/edit_round"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Actualizar "
@@ -79,8 +79,8 @@
         android:layout_below="@id/txtV_modificarDatos"
         />
     <Button
-        android:background="@drawable/edit_round"
         android:id="@+id/btn_crearDoce"
+        android:background="@drawable/edit_round"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Crear"
@@ -90,8 +90,8 @@
         android:layout_marginLeft="20dp"
         />
     <Button
-        android:background="@drawable/edit_round"
         android:id="@+id/btn_elimDoce"
+        android:background="@drawable/edit_round"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Eliminar"
@@ -101,8 +101,8 @@
         android:layout_marginTop="10dp"
         />
     <Button
-        android:background="@drawable/edit_round"
         android:id="@+id/btn_actuaDoc"
+        android:background="@drawable/edit_round"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:text="Actualizar"
@@ -110,5 +110,15 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btn_salirAdmin"
+        android:background="@drawable/edit_round"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_below="@+id/btn_actuaDoc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         />
 </RelativeLayout>

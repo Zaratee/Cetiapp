@@ -76,6 +76,11 @@ public class docente1stAct extends AppCompatActivity
             return true;
         }
 
+        if (id == R.id.item_salirDocente) {
+            android.content.Intent salir = new android.content.Intent(docente1stAct.this,MainActivity.class);
+            startActivity(salir);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

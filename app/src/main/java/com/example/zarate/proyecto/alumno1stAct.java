@@ -83,6 +83,11 @@ public class alumno1stAct extends AppCompatActivity
             frgman.beginTransaction().replace(R.id.Fragment_conteiner,new perfil_fragment()).commit();
             return true;
         }
+        if (id == R.id.item_salirAlumno) {
+            android.content.Intent salir = new android.content.Intent(alumno1stAct.this,MainActivity.class);
+            startActivity(salir);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
