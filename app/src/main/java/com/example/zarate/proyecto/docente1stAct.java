@@ -94,8 +94,6 @@ public class docente1stAct extends AppCompatActivity
             frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente,new tareas_fragment()).commit();
         } else if (id == R.id.nav_horario) {
             frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente, new horario_fragmentt()).commit();
-        } else if (id == R.id.nav_grupo) {
-            frgman.beginTransaction().replace(R.id.Fragment_conteinerdocente, new grupo_fragment()).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

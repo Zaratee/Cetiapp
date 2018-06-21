@@ -11,16 +11,11 @@
         <item
             android:id="@+id/nav_tarea"
             android:icon="@drawable/tarea"
-            android:title="Tareas" />
+            android:title="Actividades" />
         <item
             android:id="@+id/nav_horario"
             android:icon="@drawable/horarioicon"
             android:title="Horario" />
-        <item
-            android:id="@+id/nav_grupo"
-            android:icon="@drawable/grupo"
-            android:title="Grupo" />
     </group>
-
 
 </menu>

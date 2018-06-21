@@ -16,10 +16,6 @@
             android:id="@+id/nav_horario"
             android:icon="@drawable/horarioicon"
             android:title="Horario" />
-        <item
-            android:id="@+id/nav_grupo"
-            android:icon="@drawable/grupo"
-            android:title="Grupo" />
     </group>
 
 

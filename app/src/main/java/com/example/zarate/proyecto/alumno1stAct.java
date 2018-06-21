@@ -104,8 +104,6 @@ public class alumno1stAct extends AppCompatActivity
             frgman.beginTransaction().replace(R.id.Fragment_conteiner,new tareas_fragment()).commit();
         } else if (id == R.id.nav_horario) {
             frgman.beginTransaction().replace(R.id.Fragment_conteiner, new horario_fragmentt()).commit();
-        } else if (id == R.id.nav_grupo) {
-            frgman.beginTransaction().replace(R.id.Fragment_conteiner, new grupo_fragment()).commit();
         }
 
 
